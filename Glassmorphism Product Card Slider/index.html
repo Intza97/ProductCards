@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--==================== METADATOS ====================-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="ProductCards">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== TITULO ====================-->
+  <title>ProductCards | Glassmorphism Product Card Slider</title>
+
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp">
+  
+  <!--==================== CDN ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="container">
+      <ul class="thumb">
+        <li onmouseover="changeImageSrc('assets/img/shoes1.png')">
+          <img src="assets/img/shoes1.png" alt="" />
+        </li>
+        <li onmouseover="changeImageSrc('assets/img/shoes2.png')">
+          <img src="assets/img/shoes2.png" alt="" />
+        </li>
+        <li onmouseover="changeImageSrc('assets/img/shoes3.png')">
+          <img src="assets/img/shoes3.png" alt="" />
+        </li>
+      </ul>
+      <div class="imgBx">
+        <h2>Nike Air Zoom</h2>
+        <img src="assets/img/shoes1.png" alt="" class="shoesss" />
+        <ul class="size">
+          <span>Tamaño</span>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </ul>
+      </div>
+  </div>
+   <!--==================== SCRIPT ====================-->
+  <script>
+    function changeImageSrc(anything) {
+      document.querySelector(".shoesss").src = anything;
+    }
+  </script>
+</body>
+</html>
